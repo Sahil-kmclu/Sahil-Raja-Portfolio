@@ -58,9 +58,9 @@ export function Hero() {
             </a>
             <a
               href="#contact"
-              className="px-8 py-4 glass hover:bg-white/50 dark:hover:bg-white/10 rounded-full font-medium transition-all flex items-center gap-2 border border-[#C89F78]/50 hover:border-[#C89F78] text-[#1A120B] dark:text-white group"
+              className="px-8 py-[14px] rounded-full font-medium transition-all flex items-center gap-2 border-2 border-[#3E2723] text-[#3E2723] hover:bg-[#3E2723] hover:text-[#FFFAF0] dark:border-white/20 dark:text-white dark:hover:bg-white/10 dark:hover:text-white group shadow-sm hover:shadow-md"
             >
-              Contact Me <Mail size={18} className="group-hover:scale-110 transition-transform text-[#C89F78]" />
+              Contact Me <Mail size={18} className="group-hover:scale-110 transition-transform" />
             </a>
           </div>
 
