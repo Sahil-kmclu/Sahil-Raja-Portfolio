@@ -8,6 +8,7 @@ import { Services } from './components/Services';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Experience } from './components/Experience';
+import { Education } from './components/Education';
 import { Testimonials } from './components/Testimonials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -25,6 +26,7 @@ export default function App() {
         <Skills />
         <Projects />
         <Experience />
+        <Education />
         <Testimonials />
         <Contact />
       </main>
