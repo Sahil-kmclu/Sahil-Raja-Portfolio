@@ -143,7 +143,7 @@ export function Projects() {
             A selection of my recent work, showcasing complex web applications and premium user interfaces.
           </p>
         </div>
-        <a href="https://github.com/Sahil-kmclu" className="text-[#166534] font-medium hover:underline flex items-center gap-2">
+        <a href="https://github.com/Sahil-kmclu" target="_blank" rel="noopener noreferrer" className="text-[#166534] font-medium hover:underline flex items-center gap-2">
           View Github <Github size={16} />
         </a>
       </div>
@@ -215,12 +215,16 @@ export function Projects() {
                   <div className="flex gap-3">
                     <a 
                       href={selectedProject.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="px-6 py-2 bg-[#556B4E] text-white rounded-full font-medium hover:bg-[#3A4A35] transition-colors flex items-center gap-2"
                     >
                       Live Demo <ExternalLink size={16} />
                     </a>
                     <a 
                       href={selectedProject.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="px-6 py-2 border border-gray-300 dark:border-gray-700 rounded-full font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center gap-2"
                     >
                       Code <Github size={16} />

@@ -99,6 +99,8 @@ function SocialLink({ href, icon }: { href: string; icon: ReactNode }) {
   return (
     <motion.a
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       whileHover={{ y: -5, scale: 1.1 }}
       className="relative p-3 rounded-full bg-gray-100 dark:bg-gray-800/50 text-[#1a1a1a] dark:text-gray-300 transition-all duration-300 border border-transparent hover:border-[#6B8E65] group"
     >
