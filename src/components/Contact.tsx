@@ -35,45 +35,82 @@ export function Contact() {
             Have a project in mind? I'm always open to discussing new opportunities, creative ideas, or just having a chat.
           </p>
 
-          <div className="space-y-6 mb-8">
-            <ContactItem icon={<Mail className="text-[#166534]" />} title="Email" value="sahilraja9876786@gmail.com" />
-          <ContactItem icon={<Phone className="text-[#C89F78]" />} title="Phone" value="+91 9709632674" />
-          <ContactItem icon={<MapPin className="text-[#A4B494]" />} title="Location" value="India" />
+          <div>
+            <h3 className="text-2xl font-bold mb-6 text-[#1A120B] dark:text-white">Contact Information</h3>
+            <div className="space-y-8">
+              <div className="flex items-start gap-5">
+                <div className="shrink-0 p-4 bg-[#2563EB]/10 dark:bg-[#2563EB]/20 rounded-2xl text-[#2563EB]">
+                  <Mail size={24} />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <h4 className="font-bold text-lg text-[#1A120B] dark:text-white mb-1">Email</h4>
+                  <a href="mailto:sahilraja9876786@gmail.com" className="block text-[#3E2723] dark:text-gray-300 hover:text-[#2563EB] transition-colors font-medium break-all text-base leading-relaxed">
+                    sahilraja9876786@gmail.com
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-5">
+                <div className="shrink-0 p-4 bg-[#2563EB]/10 dark:bg-[#2563EB]/20 rounded-2xl text-[#2563EB]">
+                  <Phone size={24} />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <h4 className="font-bold text-lg text-[#1A120B] dark:text-white mb-1">Phone</h4>
+                  <a href="tel:+919709632674" className="block text-[#3E2723] dark:text-gray-300 hover:text-[#2563EB] transition-colors font-medium text-base leading-relaxed">
+                    +91 9709632674
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-5">
+                <div className="shrink-0 p-4 bg-[#2563EB]/10 dark:bg-[#2563EB]/20 rounded-2xl text-[#2563EB]">
+                  <MapPin size={24} />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <h4 className="font-bold text-lg text-[#1A120B] dark:text-white mb-1">Location</h4>
+                  <p className="text-[#3E2723] dark:text-gray-300 font-medium text-base leading-relaxed">
+                    Lucknow, Uttar Pradesh, India
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <a 
-            href="/resume.pdf" 
-            download
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full font-bold text-lg transition-all hover:scale-105 shadow-xl hover:shadow-2xl"
-          >
-            <Download size={20} />
-            Download Resume
-          </a>
+          <div className="mt-12">
+            <a 
+              href="/resume.pdf" 
+              download
+              className="inline-flex items-center gap-3 px-8 py-4 bg-[#1A120B] dark:bg-white text-white dark:text-[#1A120B] rounded-full font-bold text-lg transition-all hover:scale-105 shadow-xl hover:shadow-2xl hover:bg-[#3E2723] dark:hover:bg-gray-100"
+            >
+              <Download size={22} />
+              Download Resume
+            </a>
+          </div>
         </div>
 
         <div className="glass p-8 rounded-3xl">
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label htmlFor="name" className="text-sm font-bold ml-1 text-[#111827] dark:text-white">Name</label>
+                <label htmlFor="name" className="text-sm font-bold ml-1 text-[#1A120B] dark:text-white">Name</label>
                 <input 
                   type="text" 
                   id="name" 
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 text-[#111827] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#166534] transition-all placeholder:text-gray-500"
+                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 text-[#1A120B] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#166534] transition-all placeholder:text-gray-500"
                   placeholder="John Doe"
                   required
                 />
               </div>
               <div className="space-y-2">
-                <label htmlFor="email" className="text-sm font-bold ml-1 text-[#111827] dark:text-white">Email</label>
+                <label htmlFor="email" className="text-sm font-bold ml-1 text-[#1A120B] dark:text-white">Email</label>
                 <input 
                   type="email" 
                   id="email" 
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 text-[#111827] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#166534] transition-all placeholder:text-gray-500"
+                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 text-[#1A120B] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#166534] transition-all placeholder:text-gray-500"
                   placeholder="john@example.com"
                   required
                 />
@@ -81,27 +118,27 @@ export function Contact() {
             </div>
             
             <div className="space-y-2">
-              <label htmlFor="subject" className="text-sm font-bold ml-1 text-[#111827] dark:text-white">Subject</label>
+              <label htmlFor="subject" className="text-sm font-bold ml-1 text-[#1A120B] dark:text-white">Subject</label>
               <input 
                 type="text" 
                 id="subject" 
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 text-[#111827] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#166534] transition-all placeholder:text-gray-500"
+                className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 text-[#1A120B] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#166534] transition-all placeholder:text-gray-500"
                 placeholder="Project Inquiry"
                 required
               />
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="message" className="text-sm font-bold ml-1 text-[#111827] dark:text-white">Message</label>
+              <label htmlFor="message" className="text-sm font-bold ml-1 text-[#1A120B] dark:text-white">Message</label>
               <textarea 
                 id="message" 
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
-                className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 text-[#1a1a1a] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#556B4E] transition-all placeholder:text-gray-500 mt-1 resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 text-[#1A120B] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#556B4E] transition-all placeholder:text-gray-500 mt-1 resize-none"
                 placeholder="Tell me about your project..."
                 required
               ></textarea>

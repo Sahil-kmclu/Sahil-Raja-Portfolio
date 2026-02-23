@@ -84,12 +84,12 @@ export function Testimonials() {
                     <Star key={i} size={16} fill="currentColor" />
                   ))}
                 </div>
-                <p className="text-lg md:text-xl font-medium italic text-[#1a1a1a] dark:text-gray-100 mb-6">
+                <p className="text-lg md:text-xl font-medium italic text-[#1A120B] dark:text-gray-100 mb-6">
                   "{testimonial.content}"
                 </p>
                 <div>
-                  <h4 className="font-bold text-lg text-[#1a1a1a] dark:text-white">{testimonial.name}</h4>
-                  <p className="text-sm text-[#1a1a1a] dark:text-gray-300 font-medium">{testimonial.role}</p>
+                  <h4 className="font-bold text-lg text-[#1A120B] dark:text-white">{testimonial.name}</h4>
+                  <p className="text-sm text-[#1A120B] dark:text-gray-300 font-medium">{testimonial.role}</p>
                 </div>
               </div>
             </div>

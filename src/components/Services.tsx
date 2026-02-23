@@ -64,8 +64,8 @@ export function Services() {
   return (
     <Section id="services">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#111827] dark:text-white">My <span className="text-gradient">Services</span></h2>
-        <p className="text-[#374151] dark:text-gray-400 max-w-2xl mx-auto font-medium">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1A120B] dark:text-white">My <span className="text-gradient">Services</span></h2>
+        <p className="text-[#3E2723] dark:text-gray-400 max-w-2xl mx-auto font-medium">
           Comprehensive web development solutions tailored to elevate your online presence and drive business growth.
         </p>
       </div>
@@ -83,11 +83,11 @@ export function Services() {
               {service.icon}
             </div>
             
-            <h3 className="text-xl font-bold mb-4 text-[#111827] dark:text-white relative z-10">
+            <h3 className="text-xl font-bold mb-4 text-[#1A120B] dark:text-white relative z-10">
               {service.title}
             </h3>
             
-            <p className="text-[#374151] dark:text-gray-300 leading-relaxed font-medium relative z-10">
+            <p className="text-[#3E2723] dark:text-gray-300 leading-relaxed font-medium relative z-10">
               {service.description}
             </p>
           </div>

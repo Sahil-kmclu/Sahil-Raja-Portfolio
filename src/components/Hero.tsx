@@ -41,11 +41,11 @@ export function Hero() {
             Available for Freelance Work
           </motion.div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-[1.1] tracking-tight text-[#111827] dark:text-white">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-[1.1] tracking-tight text-[#1A120B] dark:text-white">
             Building the <br />
             <span className="text-gradient">Digital Future</span>
           </h1>
-          <p className="text-lg md:text-xl text-[#374151] dark:text-gray-200 mb-8 max-w-lg leading-relaxed font-medium">
+          <p className="text-lg md:text-xl text-[#3E2723] dark:text-gray-200 mb-8 max-w-lg leading-relaxed font-medium">
             I craft minimalist, high-performance web experiences with a focus on premium design and seamless interactivity.
           </p>
           
@@ -58,7 +58,7 @@ export function Hero() {
             </a>
             <a
               href="#contact"
-              className="px-8 py-4 glass hover:bg-white/50 dark:hover:bg-white/10 rounded-full font-medium transition-all flex items-center gap-2 border border-[#C89F78]/50 hover:border-[#C89F78] text-[#111827] dark:text-white group"
+              className="px-8 py-4 glass hover:bg-white/50 dark:hover:bg-white/10 rounded-full font-medium transition-all flex items-center gap-2 border border-[#C89F78]/50 hover:border-[#C89F78] text-[#1A120B] dark:text-white group"
             >
               Contact Me <Mail size={18} className="group-hover:scale-110 transition-transform text-[#C89F78]" />
             </a>

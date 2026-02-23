@@ -138,8 +138,8 @@ export function Projects() {
     <Section id="projects">
       <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#111827] dark:text-white">Featured <span className="text-gradient">Projects</span></h2>
-          <p className="text-[#374151] dark:text-gray-400 max-w-xl font-medium">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1A120B] dark:text-white">Featured <span className="text-gradient">Projects</span></h2>
+          <p className="text-[#3E2723] dark:text-gray-400 max-w-xl font-medium">
             A selection of my recent work, showcasing complex web applications and premium user interfaces.
           </p>
         </div>
@@ -193,7 +193,7 @@ export function Projects() {
               <div className="p-8">
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
                   <div>
-                    <h3 className="text-3xl font-bold mb-2 text-[#1a1a1a] dark:text-white">{selectedProject.title}</h3>
+                    <h3 className="text-3xl font-bold mb-2 text-[#1A120B] dark:text-white">{selectedProject.title}</h3>
                     <p className="text-[#556B4E] font-medium">{selectedProject.category}</p>
                   </div>
                   <div className="flex gap-3">

@@ -29,8 +29,8 @@ export function Experience() {
   return (
     <Section id="experience">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#111827] dark:text-white">Work <span className="text-gradient">Experience</span></h2>
-        <p className="text-[#374151] dark:text-gray-400 max-w-2xl mx-auto font-medium">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1A120B] dark:text-white">Work <span className="text-gradient">Experience</span></h2>
+        <p className="text-[#3E2723] dark:text-gray-400 max-w-2xl mx-auto font-medium">
           My professional journey and the companies I've had the privilege to work with.
         </p>
       </div>
@@ -53,9 +53,9 @@ export function Experience() {
                     <Calendar size={14} />
                     {exp.period}
                   </div>
-                  <h3 className="text-xl font-bold mb-1 text-[#111827] dark:text-white">{exp.role}</h3>
-                  <h4 className="text-[#374151] dark:text-gray-300 font-medium mb-4">{exp.company}</h4>
-                  <p className="text-[#374151] dark:text-gray-200 text-sm leading-relaxed font-medium">
+                  <h3 className="text-xl font-bold mb-1 text-[#1A120B] dark:text-white">{exp.role}</h3>
+                  <h4 className="text-[#3E2723] dark:text-gray-300 font-medium mb-4">{exp.company}</h4>
+                  <p className="text-[#3E2723] dark:text-gray-200 text-sm leading-relaxed font-medium">
                     {exp.description}
                   </p>
                 </div>
