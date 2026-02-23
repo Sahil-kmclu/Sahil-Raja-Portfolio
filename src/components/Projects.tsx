@@ -18,7 +18,7 @@ const projects = [
       "Imam Salary Management",
       "Data Backup & Export (Excel/JSON)"
     ],
-    stack: ["React", "Node.js", "MongoDB", "PDF Kit", "WhatsApp API"],
+    stack: ["React", "Tailwind CSS", "ExpressJS", "Node.js", "PDF Kit", "WhatsApp API"],
     liveUrl: "https://www.masjidmanager.in/",
     githubUrl: "#",
     logo: "/masjidmanagerlogo11 (1).png"
@@ -116,7 +116,7 @@ function ProjectCard({ project, onClick }: { project: typeof projects[0], onClic
         style={{ transform: "translateZ(50px)" }}
         className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-6 md:p-8"
       >
-        <span className="text-[#C89F78] text-xs md:text-sm font-medium mb-1 md:mb-2">{project.category}</span>
+        <span className="text-[#1A120B] bg-[#C89F78] border border-[#C89F78] px-2.5 py-0.5 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold mb-2 md:mb-3 w-fit shadow-md">{project.category}</span>
         <h3 className="text-white text-xl md:text-2xl font-bold mb-2">{project.title}</h3>
         <p className="text-gray-200 text-sm line-clamp-2 mb-3 md:mb-4">{project.description}</p>
         <div className="flex gap-2 flex-wrap">
@@ -175,16 +175,32 @@ export function Projects() {
               className="bg-white dark:bg-gray-900 rounded-3xl overflow-hidden max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative h-64 md:h-80">
+              <div className="relative h-64 md:h-80 bg-white dark:bg-gray-800">
                 <img 
                   src={selectedProject.image} 
                   alt={selectedProject.title} 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
+                {(selectedProject as any).logo && (
+                  <div className="absolute inset-0 bg-white flex items-center justify-center p-8 md:p-12">
+                    {typeof (selectedProject as any).logo === 'string' ? (
+                      <img 
+                        src={(selectedProject as any).logo} 
+                        alt={`${selectedProject.title} Logo`} 
+                        className="w-full h-full object-contain" 
+                      />
+                    ) : (
+                      <div className="w-full h-full flex flex-col items-center justify-center bg-black/40">
+                        <Building2 className="w-20 h-20 text-[#556B4E] mb-4 fill-white/80" />
+                        <span className="text-white font-bold text-3xl tracking-wide">Masjid Manager</span>
+                      </div>
+                    )}
+                  </div>
+                )}
                 <button 
                   onClick={() => setSelectedProject(null)}
-                  className="absolute top-4 right-4 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors"
+                  className="absolute top-4 right-4 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors z-20"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>
@@ -194,7 +210,7 @@ export function Projects() {
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
                   <div>
                     <h3 className="text-3xl font-bold mb-2 text-[#1A120B] dark:text-white">{selectedProject.title}</h3>
-                    <p className="text-[#556B4E] font-medium">{selectedProject.category}</p>
+                    <span className="text-white bg-[#556B4E] px-3 py-1 md:px-4 md:py-1.5 rounded-full text-xs md:text-sm font-semibold inline-block shadow-sm">{selectedProject.category}</span>
                   </div>
                   <div className="flex gap-3">
                     <a 
