@@ -1,5 +1,5 @@
 import { Section } from './Section';
-import { Code, Layout, Smartphone, Gauge, ShieldCheck, Search } from 'lucide-react';
+import { Code, Layout, Smartphone, Gauge, ShieldCheck, Search, Palette } from 'lucide-react';
 
 const services = [
   {
@@ -16,27 +16,33 @@ const services = [
   },
   {
     id: 3,
-    title: "Responsive & Mobile-First Design",
-    description: "Ensuring your digital presence looks and performs flawlessly across all devices. I prioritize mobile responsiveness to maximize user engagement.",
-    icon: <Smartphone className="w-8 h-8 text-[#A4B494]" />
+    title: "Website Redesign & Modernization",
+    description: "Transform your outdated website into a modern, high-performing digital asset. I overhaul the design and UX to improve engagement and align with your brand.",
+    icon: <Palette className="w-8 h-8 text-[#A4B494]" />
   },
   {
     id: 4,
-    title: "Performance Optimization",
-    description: "Speed matters. I optimize your website's performance to ensure fast loading times, better user experience, and improved search engine rankings.",
-    icon: <Gauge className="w-8 h-8 text-[#556B4E]" />
+    title: "Responsive & Mobile-First Design",
+    description: "Ensuring your digital presence looks and performs flawlessly across all devices. I prioritize mobile responsiveness to maximize user engagement.",
+    icon: <Smartphone className="w-8 h-8 text-[#556B4E]" />
   },
   {
     id: 5,
-    title: "SEO & Accessibility",
-    description: "Building with best practices to ensure your site is discoverable by search engines and accessible to all users, adhering to WCAG standards.",
-    icon: <Search className="w-8 h-8 text-[#C89F78]" />
+    title: "Performance Optimization",
+    description: "Speed matters. I optimize your website's performance to ensure fast loading times, better user experience, and improved search engine rankings.",
+    icon: <Gauge className="w-8 h-8 text-[#C89F78]" />
   },
   {
     id: 6,
+    title: "SEO & Accessibility",
+    description: "Building with best practices to ensure your site is discoverable by search engines and accessible to all users, adhering to WCAG standards.",
+    icon: <Search className="w-8 h-8 text-[#A4B494]" />
+  },
+  {
+    id: 7,
     title: "Maintenance & Support",
     description: "Ongoing support to keep your website secure and up-to-date. I handle updates, bug fixes, and feature enhancements so you can focus on your business.",
-    icon: <ShieldCheck className="w-8 h-8 text-[#A4B494]" />
+    icon: <ShieldCheck className="w-8 h-8 text-[#556B4E]" />
   }
 ];
 
